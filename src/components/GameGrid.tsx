@@ -15,6 +15,7 @@ type Game = {
 
 export default function GameGrid({ games }: { games: Game[] }) {
   const [selectedGame, setSelectedGame] = useState<Game | null>(null);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   return (
     <>
@@ -29,7 +30,7 @@ export default function GameGrid({ games }: { games: Game[] }) {
             <div className="relative aspect-[460/215] w-full overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
-                src={game.banner} 
+                src={`${basePath}${game.banner}`} 
                 alt={game.name} 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />

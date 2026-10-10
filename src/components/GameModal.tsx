@@ -17,6 +17,7 @@ type Game = {
 
 export default function GameModal({ game, onClose }: { game: Game | null; onClose: () => void }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -77,7 +78,7 @@ export default function GameModal({ game, onClose }: { game: Game | null; onClos
                       <div className="flex-[0_0_100%] min-w-0" key={idx}>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img 
-                          src={src} 
+                          src={`${basePath}${src}`} 
                           alt={`${game.name} screenshot ${idx + 1}`} 
                           className="w-full h-auto aspect-video object-cover"
                         />
