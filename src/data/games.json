@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1086940",
+    "name": "Baldur's Gate 3",
+    "short_description": "Partini topla ve dostluk, ihanet, fedakârlık, hayatta kalma ve mutlak güç arzusuyla dolu bir hikâyede Unutulmuş Diyarlar'a dön.",
+    "banner": "/images/1086940/header.jpg",
+    "screenshots": [
+      "/images/1086940/screenshot_0.jpg",
+      "/images/1086940/screenshot_1.jpg",
+      "/images/1086940/screenshot_2.jpg",
+      "/images/1086940/screenshot_3.jpg",
+      "/images/1086940/screenshot_4.jpg"
+    ],
+    "price": {
+      "usd": 59.99,
+      "try": 2960
+    }
+  },
+  {
+    "id": "1245620",
+    "name": "ELDEN RING",
+    "short_description": "YENİ FANTASTİK AKSİYON ROL YAPMA OYUNU. Tarnished, yüksel ve zarafetin seni yönlendirmesine izin ver. Elden Ring'in gücünü kullan ve Lands Between'de bir Elden Lord ol.",
+    "banner": "/images/1245620/header.jpg",
+    "screenshots": [
+      "/images/1245620/screenshot_0.jpg",
+      "/images/1245620/screenshot_1.jpg",
+      "/images/1245620/screenshot_2.jpg",
+      "/images/1245620/screenshot_3.jpg",
+      "/images/1245620/screenshot_4.jpg"
+    ],
+    "price": {
+      "usd": 59.99,
+      "try": 2960
+    }
+  }
+]
