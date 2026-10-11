@@ -1,5 +1,22 @@
 [
   {
+    "id": "1091500",
+    "name": "Cyberpunk 2077",
+    "short_description": "Cyberpunk 2077, karanlık bir gelecekte güç, gösteriş ve vücut modifikasyonu çılgınlığına kapılmış Night City kümekentinde geçen bir açık dünya aksiyon macera hikâyesidir.",
+    "banner": "/images/1091500/header.jpg",
+    "screenshots": [
+      "/images/1091500/screenshot_0.jpg",
+      "/images/1091500/screenshot_1.jpg",
+      "/images/1091500/screenshot_2.jpg",
+      "/images/1091500/screenshot_3.jpg",
+      "/images/1091500/screenshot_4.jpg"
+    ],
+    "price": {
+      "usd": 59.99,
+      "try": 2959
+    }
+  },
+  {
     "id": "1086940",
     "name": "Baldur's Gate 3",
     "short_description": "Partini topla ve dostluk, ihanet, fedakârlık, hayatta kalma ve mutlak güç arzusuyla dolu bir hikâyede Unutulmuş Diyarlar'a dön.",
