@@ -24,8 +24,8 @@ export default function Header({ searchQuery, onSearchChange, onOpenCreateModal 
           <div>
             <div className="text-xl font-black tracking-tight text-gray-900 dark:text-white flex items-center gap-1.5">
               <span>{t.siteName}</span>
-              <span className="text-xs px-1.5 py-0.5 rounded bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300 font-semibold uppercase tracking-wider">
-                Demo
+              <span className="text-xs px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950/80 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800 font-semibold tracking-wide">
+                {t.previewBadge}
               </span>
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-400 hidden sm:block">
