@@ -1,15 +1,14 @@
 'use client';
 
 import { useLanguage } from '@/lib/i18n';
-import { Cpu, Search, Plus, Globe, DollarSign, X, ExternalLink } from 'lucide-react';
+import { Cpu, Search, Globe, DollarSign, X, ExternalLink } from 'lucide-react';
 
 interface HeaderProps {
   searchQuery: string;
   onSearchChange: (q: string) => void;
-  onOpenCreateModal: () => void;
 }
 
-export default function Header({ searchQuery, onSearchChange, onOpenCreateModal }: HeaderProps) {
+export default function Header({ searchQuery, onSearchChange }: HeaderProps) {
   const { t, lang, setLang, currency, toggleCurrency } = useLanguage();
 
   return (
@@ -114,16 +113,6 @@ export default function Header({ searchQuery, onSearchChange, onOpenCreateModal 
             <Globe className="w-3.5 h-3.5 text-blue-500" />
             <span className="hidden sm:inline">{lang === 'tr' ? 'TR' : 'EN'}</span>
           </button>
-
-          {/* Post Listing Button */}
-          <button
-            onClick={onOpenCreateModal}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm shadow-md shadow-blue-600/20 hover:shadow-lg transition-all"
-          >
-            <Plus className="w-4 h-4" />
-            <span className="hidden md:inline">{t.postListing}</span>
-          </button>
-
         </div>
 
       </div>

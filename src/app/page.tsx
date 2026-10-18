@@ -5,7 +5,6 @@ import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import ListingCard from '@/components/ListingCard';
 import ListingModal from '@/components/ListingModal';
-import CreateListingModal from '@/components/CreateListingModal';
 import initialListingsData from '@/data/listings.json';
 import { Listing, FilterState } from '@/lib/types';
 import { useLanguage } from '@/lib/i18n';
@@ -30,7 +29,6 @@ export default function Home() {
 
   // Modal & Interactive states
   const [selectedListing, setSelectedListing] = useState<Listing | null>(null);
-  const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   const showToast = (msg: string) => {
@@ -101,11 +99,6 @@ export default function Home() {
     });
   };
 
-  const handleAddNewListing = (newListing: Listing) => {
-    setListings((prev) => [newListing, ...prev]);
-    showToast(t.listingSuccess);
-  };
-
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-black text-gray-900 dark:text-white flex flex-col">
       
@@ -113,7 +106,6 @@ export default function Home() {
       <Header
         searchQuery={filters.search}
         onSearchChange={(q) => handleFilterChange({ search: q })}
-        onOpenCreateModal={() => setIsCreateModalOpen(true)}
       />
 
       {/* Main Body */}
@@ -197,12 +189,7 @@ export default function Home() {
         onShowToast={showToast}
       />
 
-      {/* Create Listing Modal (Preview Mode) */}
-      <CreateListingModal
-        isOpen={isCreateModalOpen}
-        onClose={() => setIsCreateModalOpen(false)}
-        onSubmit={handleAddNewListing}
-      />
+
 
       {/* Interactive Toast Notification */}
       <AnimatePresence>
