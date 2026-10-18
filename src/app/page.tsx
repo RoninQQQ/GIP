@@ -7,9 +7,9 @@ import ListingCard from '@/components/ListingCard';
 import ListingModal from '@/components/ListingModal';
 import CreateListingModal from '@/components/CreateListingModal';
 import initialListingsData from '@/data/listings.json';
-import { Listing, FilterState, Category } from '@/lib/types';
+import { Listing, FilterState } from '@/lib/types';
 import { useLanguage } from '@/lib/i18n';
-import { Info, Sparkles, FilterX } from 'lucide-react';
+import { Sparkles, FilterX } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 export default function Home() {
@@ -109,29 +109,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-black text-gray-900 dark:text-white flex flex-col">
       
-      {/* Top Navigation */}
+      {/* Top Navigation with Preview Division */}
       <Header
         searchQuery={filters.search}
         onSearchChange={(q) => handleFilterChange({ search: q })}
         onOpenCreateModal={() => setIsCreateModalOpen(true)}
       />
-
-      {/* Interactive Preview Banner */}
-      <div className="bg-gradient-to-r from-blue-600/10 via-indigo-600/10 to-blue-600/10 border-b border-blue-200/50 dark:border-blue-900/30 py-2.5 px-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between text-xs text-blue-800 dark:text-blue-300">
-          <div className="flex items-center gap-2">
-            <Info className="w-4 h-4 shrink-0 text-blue-600 dark:text-blue-400" />
-            <span>{t.previewBanner}</span>
-          </div>
-          <button
-            onClick={() => setIsCreateModalOpen(true)}
-            className="hidden sm:flex items-center gap-1 font-semibold underline underline-offset-2 hover:text-blue-950 dark:hover:text-blue-200"
-          >
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Yeni İlan Ekleme Testi</span>
-          </button>
-        </div>
-      </div>
 
       {/* Main Body */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full">

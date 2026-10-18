@@ -6,6 +6,9 @@ const translations = {
   tr: {
     siteName: "DonanımPazar",
     siteTagline: "İkinci El Bilgisayar & Parça Vitrini",
+    topBarTitle: "GitHub Pages Önizleme Sayfası",
+    topBarDesc: "İnteraktif Test & Arayüz Vitrini (Canlı Sunucu Öncesi Demo)",
+    repoLink: "GitHub Deposu",
     previewBadge: "Önizleme Sürümü",
     previewBanner: "🧪 GitHub Pages İnteraktif Önizleme Sürümü: Sunucu kurulumu yapılana kadar test amaçlı çalışır.",
     searchPlaceholder: "Ekran kartı, işlemci, laptop veya parça ara...",
@@ -55,6 +58,9 @@ const translations = {
   en: {
     siteName: "HardwareMarket",
     siteTagline: "Second-Hand PC & Hardware Marketplace",
+    topBarTitle: "GitHub Pages Preview Page",
+    topBarDesc: "Interactive Test & UI Showcase (Pre-Server Demo)",
+    repoLink: "GitHub Repo",
     previewBadge: "Preview Version",
     previewBanner: "🧪 GitHub Pages Interactive Preview Version: Runs in demo mode until deployed to a real server.",
     searchPlaceholder: "Search GPU, CPU, laptop or PC parts...",

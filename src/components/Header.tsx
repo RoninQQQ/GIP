@@ -1,7 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/lib/i18n';
-import { Cpu, Search, Plus, Globe, DollarSign, X } from 'lucide-react';
+import { Cpu, Search, Plus, Globe, DollarSign, X, ExternalLink } from 'lucide-react';
 
 interface HeaderProps {
   searchQuery: string;
@@ -13,7 +13,44 @@ export default function Header({ searchQuery, onSearchChange, onOpenCreateModal 
   const { t, lang, setLang, currency, toggleCurrency } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/80 dark:bg-zinc-950/80 border-b border-gray-200 dark:border-zinc-800 transition-colors">
+    <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/90 dark:bg-zinc-950/90 border-b border-gray-200 dark:border-zinc-800 transition-colors shadow-sm">
+      
+      {/* Top Header Division: GitHub Pages Önizleme Sayfası Bölmesi */}
+      <div className="bg-zinc-950 text-zinc-300 border-b border-zinc-800/80 text-xs py-2 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
+          
+          <div className="flex items-center gap-2.5">
+            <span className="flex h-2 w-2 relative shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <div className="font-bold text-white tracking-wide flex items-center gap-2">
+              <span className="text-xs sm:text-sm">{t.topBarTitle}</span>
+              <span className="text-[10px] px-1.5 py-0.2 rounded bg-zinc-800 text-emerald-400 border border-zinc-700 font-mono font-normal hidden sm:inline">
+                Live Preview
+              </span>
+            </div>
+            <span className="hidden md:inline text-zinc-600">•</span>
+            <span className="hidden md:inline text-zinc-400 text-xs">
+              {t.topBarDesc}
+            </span>
+          </div>
+
+          <div className="flex items-center gap-2.5 shrink-0">
+            <a 
+              href="https://github.com/RoninQQQ/GIP" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-zinc-300 hover:text-white transition-colors bg-zinc-800/90 hover:bg-zinc-700 px-2.5 py-1 rounded-md font-medium text-[11px] border border-zinc-700/60"
+            >
+              <ExternalLink className="w-3 h-3 text-blue-400" />
+              <span>{t.repoLink}</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
         
         {/* Brand / Logo */}
