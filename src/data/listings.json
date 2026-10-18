@@ -1,0 +1,216 @@
+[
+  {
+    "id": "gpu-1",
+    "title": "ASUS ROG Strix RTX 3070 Ti OC 8GB - Temiz Kutulu Faturalı",
+    "category": "gpu",
+    "price": {
+      "try": 14500,
+      "usd": 420
+    },
+    "location": "İstanbul / Kadıköy",
+    "condition": "Kutulu / Faturalı",
+    "date": "Bugün",
+    "cover": "/images/listings/gpu-rtx3070ti/cover.jpg",
+    "images": [
+      "/images/listings/gpu-rtx3070ti/cover.jpg",
+      "/images/listings/gpu-rtx3070ti/shot_1.jpg",
+      "/images/listings/gpu-rtx3070ti/shot_2.jpg"
+    ],
+    "description": "Kendi kullandığım oyuncu bilgisayarımdan yükseltme amacıyla satıyorum. Mining vs. kesinlikle görmemiştir, FurMark testinde 68 dereceyi geçmez. Kutusu, faturası ve tüm antistatik poşetleri tamdır. Kadıköy içi elden teslim veya havale sonrası kargo yapılabilir.",
+    "specs": {
+      "Bellek": "8 GB GDDR6X",
+      "Çekirdek Hızı": "1875 MHz (OC)",
+      "Güç Tüketimi": "290W",
+      "Garanti": "Bitti (Vatan Bilgisayar faturalı)"
+    },
+    "seller": {
+      "name": "Ahmet K.",
+      "rating": 4.9,
+      "dealsCount": 18,
+      "memberSince": "Mart 2021"
+    }
+  },
+  {
+    "id": "cpu-1",
+    "title": "AMD Ryzen 7 5800X 3.8GHz 32MB Cache AM4 - Pinsiz Sorunsuz",
+    "category": "cpu",
+    "price": {
+      "try": 6250,
+      "usd": 180
+    },
+    "location": "Ankara / Çankaya",
+    "condition": "Temiz / İkinci El",
+    "date": "Dün",
+    "cover": "/images/listings/cpu-ryzen5800x/cover.jpg",
+    "images": [
+      "/images/listings/cpu-ryzen5800x/cover.jpg",
+      "/images/listings/cpu-ryzen5800x/shot_1.jpg",
+      "/images/listings/cpu-ryzen5800x/shot_2.jpg"
+    ],
+    "description": "Sistem değişikliği (AM5'e geçiş) nedeniyle satılıktır. Pinlerinde en ufak eğiklik veya hasar yoktur. Sıvı soğutma ile stabil 4.7GHz hızında serin çalıştırılmıştır. Orijinal kutusuyla birlikte verilecektir.",
+    "specs": {
+      "Çekirdek": "8 Çekirdek / 16 İş Parçacığı",
+      "Soket": "AM4",
+      "Temel Hız": "3.8 GHz",
+      "Max Boost": "4.7 GHz"
+    },
+    "seller": {
+      "name": "Mert Y.",
+      "rating": 5.0,
+      "dealsCount": 9,
+      "memberSince": "Kasım 2022"
+    }
+  },
+  {
+    "id": "laptop-1",
+    "title": "Lenovo Legion 5 (Ryzen 7 5800H - RTX 3060 - 16GB RAM - 165Hz)",
+    "category": "laptop",
+    "price": {
+      "try": 26800,
+      "usd": 780
+    },
+    "location": "İzmir / Karşıyaka",
+    "condition": "Kutulu / Faturalı",
+    "date": "3 gün önce",
+    "cover": "/images/listings/laptop-legion5/cover.jpg",
+    "images": [
+      "/images/listings/laptop-legion5/cover.jpg",
+      "/images/listings/laptop-legion5/shot_1.jpg",
+      "/images/listings/laptop-legion5/shot_2.jpg"
+    ],
+    "description": "Masaüstü sisteme geçtiğim için cihaz boşa çıktı. Çizik, vuruk, ezik kesinlikle yoktur. Klavyesinde silinme dahi bulunmaz, harici klavye-mouse ile kullanıldı. Orijinal 230W şarj adaptörü ve kutusu mevcuttur.",
+    "specs": {
+      "İşlemci": "Ryzen 7 5800H",
+      "Ekran Kartı": "RTX 3060 130W",
+      "RAM": "16 GB DDR4",
+      "Ekran": "15.6\" FHD 165Hz IPS"
+    },
+    "seller": {
+      "name": "Caner B.",
+      "rating": 4.8,
+      "dealsCount": 24,
+      "memberSince": "Ocak 2020"
+    }
+  },
+  {
+    "id": "phone-1",
+    "title": "Apple iPhone 13 Pro 128GB Sierra Blue - Pil %87 TR Cihazı",
+    "category": "phone",
+    "price": {
+      "try": 34500,
+      "usd": 1000
+    },
+    "location": "İstanbul / Beşiktaş",
+    "condition": "Kutulu / Faturalı",
+    "date": "Bugün",
+    "cover": "/images/listings/phone-iphone13pro/cover.jpg",
+    "images": [
+      "/images/listings/phone-iphone13pro/cover.jpg",
+      "/images/listings/phone-iphone13pro/shot_1.jpg",
+      "/images/listings/phone-iphone13pro/shot_2.jpg"
+    ],
+    "description": "Tek elden titizlikle kullanılmıştır, ilk günden itibaren Spigen kılıf ve ekran koruyucu cam ile korunmuştur. Kasada ve ekranda kılcal çizik dahi yoktur. Değişeni yoktur, True Tone ve Face ID sorunsuz aktiftir. Kutu ve orijinal kablosu mevcuttur.",
+    "specs": {
+      "Dahili Hafıza": "128 GB",
+      "Pil Sağlığı": "%87",
+      "Kozmetik": "10/10",
+      "Garanti": "Bitti (Gürgençler Faturalı)"
+    },
+    "seller": {
+      "name": "Serkan A.",
+      "rating": 5.0,
+      "dealsCount": 42,
+      "memberSince": "Şubat 2018"
+    }
+  },
+  {
+    "id": "monitor-1",
+    "title": "Samsung Odyssey G7 27\" 240Hz 1ms WQHD 1000R Kavisli HDR600",
+    "category": "monitor",
+    "price": {
+      "try": 13900,
+      "usd": 400
+    },
+    "location": "İstanbul / Ümraniye",
+    "condition": "Temiz / İkinci El",
+    "date": "4 gün önce",
+    "cover": "/images/listings/monitor-odyssey27/cover.jpg",
+    "images": [
+      "/images/listings/monitor-odyssey27/cover.jpg",
+      "/images/listings/monitor-odyssey27/shot_1.jpg"
+    ],
+    "description": "Ölü piksel, ışık sızması veya panel arızası kesinlikle yoktur. G-Sync uyumlu, 240Hz ve 2K çözünürlük ile rekabetçi oyunlar için kusursuz bir ekran. Orijinal adaptörü ve DisplayPort kablosuyla teslim edilecektir.",
+    "specs": {
+      "Ekran Boyutu": "27 inç",
+      "Çözünürlük": "2560x1440 (2K)",
+      "Yenileme": "240 Hz",
+      "Panel": "VA QLED 1000R"
+    },
+    "seller": {
+      "name": "Tolga D.",
+      "rating": 4.7,
+      "dealsCount": 12,
+      "memberSince": "Haziran 2021"
+    }
+  },
+  {
+    "id": "ram-1",
+    "title": "Corsair Vengeance LPX 32GB (2x16GB) 3600MHz CL18 DDR4",
+    "category": "ram",
+    "price": {
+      "try": 2400,
+      "usd": 70
+    },
+    "location": "Bursa / Nilüfer",
+    "condition": "Kutulu / Faturalı",
+    "date": "1 gün önce",
+    "cover": "/images/listings/ram-corsair32gb/cover.jpg",
+    "images": [
+      "/images/listings/ram-corsair32gb/cover.jpg",
+      "/images/listings/ram-corsair32gb/shot_1.jpg"
+    ],
+    "description": "MemTest86 testi sıfır hata ile geçmiştir. Dual channel kit olarak çalışmaktadır. Düşük profilli soğutucusu sayesinde kule tipi işlemci soğutucularıyla tam uyumludur.",
+    "specs": {
+      "Kapasite": "32 GB (2x16GB)",
+      "Hız": "3600 MHz",
+      "Gecikme": "CL18",
+      "Tip": "DDR4 UDIMM"
+    },
+    "seller": {
+      "name": "Burak T.",
+      "rating": 4.9,
+      "dealsCount": 31,
+      "memberSince": "Eylül 2019"
+    }
+  },
+  {
+    "id": "mb-1",
+    "title": "ASUS ROG Strix B550-F Gaming Wi-Fi II AM4 Anakart",
+    "category": "motherboard",
+    "price": {
+      "try": 5400,
+      "usd": 155
+    },
+    "location": "Kocaeli / İzmit",
+    "condition": "Kutulu / Faturalı",
+    "date": "5 gün önce",
+    "cover": "/images/listings/mb-b550rog/cover.jpg",
+    "images": [
+      "/images/listings/mb-b550rog/cover.jpg",
+      "/images/listings/mb-b550rog/shot_1.jpg"
+    ],
+    "description": "Sorunsuz, temiz kullanılmış anakart. Dahili Wi-Fi 6 anteni, kutusu, kullanım kılavuzları ve SATA kabloları eksiksizdir. PCIe 4.0 ve çift M.2 desteği bulunur.",
+    "specs": {
+      "Yonga Seti": "AMD B550",
+      "Form Faktör": "ATX",
+      "RAM Desteği": "4x DDR4 (128GB Max)",
+      "Kablosuz": "Wi-Fi 6E + Bluetooth 5.2"
+    },
+    "seller": {
+      "name": "Deniz S.",
+      "rating": 4.9,
+      "dealsCount": 15,
+      "memberSince": "Aralık 2021"
+    }
+  }
+]

@@ -1,9 +1,8 @@
 {
-  "name": "gip-temp",
+  "name": "donanimpazar",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "add-game": "node scripts/add-game.mjs",
     "dev": "next dev",
     "build": "next build --turbopack",
     "start": "next start",

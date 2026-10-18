@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Oyun Vitrini",
-  description: "Modern oyun sergileme sitesi",
+  title: "DonanımPazar | İkinci El Bilgisayar & Parça Pazaryeri",
+  description: "İkinci el ekran kartı, işlemci, laptop, RAM ve donanım parçaları alım satım platformu",
 };
 
 import { LanguageProvider } from "@/lib/i18n";
