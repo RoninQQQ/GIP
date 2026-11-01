@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DonanımPazar — İkinci El Donanım Pazaryeri
 
-## Getting Started
+Modern, hızlı ve güvenli 2. el bilgisayar ve donanım alış-satış platformu. Next.js 16 (App Router), Tailwind CSS v4, Framer Motion ve TypeScript ile geliştirilmiştir.
 
-First, run the development server:
+---
+
+## 🚀 Hızlı Başlangıç & Kurulum (Gerçek Çalışma Ortamı)
+
+Projeyi yerel bilgisayarınızda veya gerçek sunucuda çalıştırmak için aşağıdaki adımları izleyin:
+
+### 1. Ortam Değişkenlerini Hazırlama
+Depoda bulunan `.env.example` şablonunu yerel ortam değişkeni olarak kopyalayın:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cp .env.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Ortam Değişkenleri ve Test Hesabı
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`.env.local` dosyasındaki ayarları dilediğiniz gibi düzenleyebilirsiniz:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+# Uygulama Çalışma Modu ('production' | 'preview')
+NEXT_PUBLIC_APP_MODE=production
+NEXT_PUBLIC_BASE_PATH=
 
-## Learn More
+# Gerçek Kurulum Ortamı Varsayılan Test Hesabı Bilgileri
+NEXT_PUBLIC_TEST_USER_EMAIL=test@donanimpazar.com
+NEXT_PUBLIC_TEST_USER_PASSWORD=test1234
+NEXT_PUBLIC_TEST_USER_NAME=Test Kullanıcısı
+NEXT_PUBLIC_TEST_USER_CITY=İstanbul
+```
 
-To learn more about Next.js, take a look at the following resources:
+> **Not:** Gerçek çalışma ortamında (`NEXT_PUBLIC_APP_MODE=production`) yukarıdaki test hesabı bilgileriyle doğrudan giriş yapabilir veya "Kayıt Ol" sekmesinden yeni hesaplar oluşturabilirsiniz.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Bağımlılıkları Yükleme ve Başlatma
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Bağımlılıkları yükleyin
+npm install
 
-## Deploy on Vercel
+# Geliştirme sunucusunu başlatın
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine giderek uygulamayı görüntüleyebilirsiniz.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Üretim Derlemesi (Build)
+
+Statik dışa aktarma (static export) ve üretim derlemesi için:
+
+```bash
+npm run build
+```
+
+Derlenen statik dosyalar `./out` dizini altına oluşturulur.
+
+---
+
+## 🌟 Temel Özellikler
+
+- **Çift Ortam Mimarisi:** GitHub Pages önizlemesi (`preview`) ve Gerçek Kurulum (`production`) modları arasında otomatik uyum.
+- **Güvenli Sepet & Checkout:** Tekil 2. el ürün yapısı, hizmet bedeli hesabı, sipariş geçmişi ve havuz teslimat onayı.
+- **Pazarlık / Teklif Ver:** İlan detayından satıcıya hızlı indirimli teklif sunma ve onaylama.
+- **İlan Verme & Silme:** Giriş yapmış kullanıcılar için kalıcı ilan oluşturma ve kendi ilanlarını yönetme.
+- **Favoriler & Filtreler:** Kategori, durum, şehir, fiyat aralığı, sıralama ve "İlanlarım" filtresi.
+- **Koyu / Açık Tema:** Tailwind v4 uyumlu, kalıcı tema değiştirici.
+- **Çoklu Dil & Para Birimi:** TR / EN ve TRY / USD anlık kur desteği.

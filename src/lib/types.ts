@@ -4,8 +4,15 @@ export type Category =
   | 'cpu'
   | 'motherboard'
   | 'ram'
-  | 'laptop'
+  | 'storage'
+  | 'psu'
+  | 'case'
+  | 'cooler'
   | 'monitor'
+  | 'laptop'
+  | 'desktop'
+  | 'peripherals'
+  | 'network_sound'
   | 'phone';
 
 export type Listing = {
@@ -28,8 +35,11 @@ export type Listing = {
     rating: number;
     dealsCount: number;
     memberSince: string;
+    verified?: boolean;
   };
 };
+
+export type SortOption = 'default' | 'price_asc' | 'price_desc';
 
 export type FilterState = {
   category: Category;
@@ -38,4 +48,34 @@ export type FilterState = {
   minPrice: number | null;
   maxPrice: number | null;
   location: string;
+  onlyFavorites?: boolean;
+  onlyMyListings?: boolean;
+  sortBy?: SortOption;
 };
+
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  city: string;
+  province?: string;
+  district?: string;
+  rating: number;
+  dealsCount: number;
+  memberSince: string;
+  verified: boolean;
+  isTestAccount?: boolean;
+  favorites: string[]; // favori ilan ID'leri
+}
+
+export interface Order {
+  id: string;
+  date: string;
+  items: Listing[];
+  total: {
+    try: number;
+    usd: number;
+  };
+  address: string;
+  status: 'escrow_held' | 'completed';
+}
